@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*font-family: "Montserrat", sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+/*font-family: "Source Sans 3", sans-serif;*/
+
+/*24min*/
+
+:root {
+  --principalColor: #a306b6;
+  --bkColor: #ffffff;
+  --footer: #d9d9d9;
+  --headerColor: #ffffff;
+  --fontTitle: "Montserrat", sans-serif;
+  --fontP: "Source Sans 3", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fontTitle);
+}
+
+p {
+  font-family: var(--fontP);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  header {
+    background-color: var(--principalColor);
+    color: var(--headerColor);
+
+    nav {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        height: 50px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+}
