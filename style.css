@@ -95,6 +95,7 @@ body {
   }
 }
 main {
+  margin-bottom: 5rem;
   section {
     display: flex;
     flex-direction: column;
@@ -104,6 +105,12 @@ main {
       color: var(--principalColor);
       margin: 2rem 0 2rem 0;
       font-size: 50px;
+    }
+
+    p {
+      width: 70%;
+      margin: 1rem;
+      text-justify: auto;
     }
 
     #cardContainer {
@@ -116,24 +123,47 @@ main {
         border-radius: 2%;
         padding: 2vh;
       }
-    }
 
-    img {
-      height: 100%;
-      width: 100%;
-    }
+      img {
+        height: 100%;
+        width: 100%;
+      }
 
-    h3 {
-      font-size: 50px;
+      button {
+        background-color: var(--principalColor);
+        color: var(--bkColor);
+        font-size: 20px;
+        border: 2px;
+        border-radius: 20px;
+        padding: 0.7rem 4rem;
+        margin-top: 2rem;
+      }
+
+      h3 {
+        font-size: 50px;
+      }
     }
-    button {
-      background-color: var(--principalColor);
-      color: var(--bkColor);
-      font-size: 20px;
-      border: 2px;
-      border-radius: 20px;
-      padding: 0.7rem 4rem;
-      margin-top: 2rem;
-    }
+  }
+}
+@media screen and (min-width: 992px) {
+  #cardContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    border-radius: 2%;
+    padding: 2vh;
+  }
+}
+
+footer {
+  background-color: var(--footer);
+  text-align: center;
+  padding: 1rem;
+
+  span {
+    color: var(--principalColor);
+  }
+  #heart {
+    color: red;
   }
 }
